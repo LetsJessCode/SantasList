@@ -1,0 +1,22 @@
+  <h1>Santas List</h1>
+  <table>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Naughty/Nice</th>
+        <th>Age</th>
+        <th>Gift</th>
+        <th colspan="3"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @santas_lists.each do |s| %>
+        <tr> 
+            <td><%= s.kid %></td>
+            <td><%= s.list %></td>
+            <td><%= s.age %></td>
+            <td><%= s.gift %></td>
+        <% end %>
+        </tr>
+    </tbody>
+  </table>
