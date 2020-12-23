@@ -1,1 +1,8 @@
-Create New Child Here
+<%= form_for @santas_list do |f| %>
+    <h3>Child's Full Name: <%= f.text_field :kid %></h3>
+    <h3>Age: <%= f.text_field :age %></h3>
+    <h3>Naughty/Nice: <%= f.select :list, ['Naughty', 'Nice'] %></h3>
+    <h3>Gift: <%= f.text_field :gift %></h3>
+    <%= f.submit 'Add To Santas List' %>
+
+<% end %>
