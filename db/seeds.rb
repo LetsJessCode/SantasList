@@ -8,9 +8,9 @@
 
 
 santas_lists = SantasList.create([
-    { kid: 'Michael',list: 'Nice', age: 12, gift: 'skateboard'},  
-    {kid: 'Andrew', list: 'Naughty', age: 8, gift: 'coal'}, 
-    {kid: 'Madelyn', list: 'Nice', age: 5, gift: 'doll'},
-    {kid: 'Angela', list: 'Naughty', age: 7, gift: 'coal'}
+    { kid: 'Michael',list: 'Nice', age: 12, gift: 'skateboard', delivered: '' },  
+    {kid: 'Andrew', list: 'Naughty', age: 8, gift: 'coal', delivered: '' }, 
+    {kid: 'Madelyn', list: 'Nice', age: 5, gift: 'doll', delivered: '' },
+    {kid: 'Angela', list: 'Naughty', age: 7, gift: 'coal', delivered: '' }
 ])
 puts 'list completed'
