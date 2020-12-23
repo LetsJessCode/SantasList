@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kid: MyString
+  list: MyString
+  age: 1
+  gift: MyString
+
+two:
+  kid: MyString
+  list: MyString
+  age: 1
+  gift: MyString

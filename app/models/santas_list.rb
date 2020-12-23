@@ -1,0 +1,2 @@
+class SantasList < ApplicationRecord
+end
