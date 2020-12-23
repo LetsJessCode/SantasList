@@ -6,6 +6,4 @@ class SantasListsController < ApplicationController
     def new
         @santas_list = SantasList.new
     end
-
-    def create
 end
