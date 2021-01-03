@@ -17,15 +17,23 @@ class SantasListsController < ApplicationController
     end
 
     def edit
-        @santas_list = SantasList.find_by_id(params[:id])
+        set_santas_list
     end
 
     def update 
 
-    end  
+    end 
+
+    def show 
+        set_santas_list
+    end
 
     private
     def santas_list_params
-        params.require(:santas).permit(:kid, :list, :age, :delivered, :gift)
+        params.require(:santas_list).permit(:kid, :list, :age, :delivered, :gift, :id)
+    end
+
+    def set_santas_list
+        @santas_list = SantasList.find_by_id(params[:id])
     end
 end
